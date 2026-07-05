@@ -144,7 +144,7 @@ public class SimpleLog implements Log, Serializable {
     static {
         // Add props from the resource simplelog.properties
         try (InputStream in = getResourceAsStream("simplelog.properties")) {
-            if (null != in) {
+            if (in != null) {
                 simpleLogProps.load(in);
             }
         } catch (final IOException ignore) {
