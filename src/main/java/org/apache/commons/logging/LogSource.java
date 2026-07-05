@@ -188,7 +188,7 @@ public class LogSource {
         } catch (final Throwable t) {
             log = null;
         }
-        if (null == log) {
+        if (log == null) {
             log = new NoOpLog(name);
         }
         return log;
