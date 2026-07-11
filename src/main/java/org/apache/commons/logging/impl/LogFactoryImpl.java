@@ -478,7 +478,7 @@ public class LogFactoryImpl extends LogFactory {
      * Attempts to create a Log instance for the given category name.
      * Follows the discovery process described in the class Javadoc.
      *
-     * @param logCategory the name of the log category
+     * @param logCategory The name of the log category
      * @throws LogConfigurationException if an error in discovery occurs,
      * or if no adapter at all can be instantiated
      */
@@ -1012,8 +1012,8 @@ public class LogFactoryImpl extends LogFactory {
      *
      * @param messageBuffer {@code StringBuffer} the message should be appended to,
      * not null
-     * @param name the (trimmed) name to be test against the candidate, not null
-     * @param candidate the candidate name (not null)
+     * @param name The (trimmed) name to be test against the candidate, not null
+     * @param candidate The candidate name (not null)
      */
     private void informUponSimilarName(final StringBuilder messageBuffer, final String name, final String candidate) {
         if (name.equals(candidate)) {

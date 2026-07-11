@@ -125,7 +125,7 @@ public class LogSource {
     /**
      * Gets a {@code Log} instance by class.
      *
-     * @param clazz a Class.
+     * @param clazz A Class.
      * @return A {@code Log} instance.
      */
     static public Log getInstance(final Class<?> clazz) {
@@ -177,7 +177,7 @@ public class LogSource {
      * class is available in the {@link LogSource}'s classpath, or a Jdk14Logger if we
      * are on a JDK 1.4 or later system, or NoOpLog if neither of the above conditions is true.
      *
-     * @param name the log name (or category)
+     * @param name The log name (or category)
      * @return A new instance.
      */
     static public Log makeNewLogInstance(final String name) {

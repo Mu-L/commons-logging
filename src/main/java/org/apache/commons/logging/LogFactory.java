@@ -1026,7 +1026,7 @@ public abstract class LogFactory {
      *   <li>VirtualMachineError</li>
      * </ul>
      *
-     * @param t the Throwable to check
+     * @param t The Throwable to check
      */
     protected static void handleThrowable(final Throwable t) {
         if (t instanceof ThreadDeath) {

@@ -62,7 +62,7 @@ public class AvalonLogger implements Log {
     /**
      * Sets the ancestral Avalon logger from which the delegating loggers will descend.
      *
-     * @param logger the default avalon logger,
+     * @param logger The default avalon logger,
      * in case there is no logger instance supplied in constructor
      */
     public static void setDefaultLogger(final Logger logger) {
@@ -76,7 +76,7 @@ public class AvalonLogger implements Log {
      * Constructs an {@code AvalonLogger} that outputs to the given
      * {@code Logger} instance.
      *
-     * @param logger the Avalon logger implementation to delegate to
+     * @param logger The Avalon logger implementation to delegate to
      */
     public AvalonLogger(final Logger logger) {
         this.logger = logger;
@@ -86,7 +86,7 @@ public class AvalonLogger implements Log {
      * Constructs an {@code AvalonLogger} that will log to a child
      * of the {@code Logger} set by calling {@link #setDefaultLogger}.
      *
-     * @param name the name of the avalon logger implementation to delegate to
+     * @param name The name of the avalon logger implementation to delegate to
      */
     public AvalonLogger(final String name) {
         Objects.requireNonNull(defaultLogger, "defaultLogger");
