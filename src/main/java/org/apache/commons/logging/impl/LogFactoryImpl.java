@@ -1161,7 +1161,7 @@ public class LogFactoryImpl extends LogFactory {
      * Create and return a new {@link org.apache.commons.logging.Log} instance for the specified name.
      *
      * @param name Name of the new logger
-     * @return a new {@link org.apache.commons.logging.Log}
+     * @return A new {@link org.apache.commons.logging.Log}
      * @throws LogConfigurationException if a new instance cannot be created
      */
     protected Log newInstance(final String name) throws LogConfigurationException {

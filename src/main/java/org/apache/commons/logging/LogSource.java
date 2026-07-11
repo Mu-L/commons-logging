@@ -126,7 +126,7 @@ public class LogSource {
      * Gets a {@code Log} instance by class.
      *
      * @param clazz a Class.
-     * @return a {@code Log} instance.
+     * @return A {@code Log} instance.
      */
     static public Log getInstance(final Class<?> clazz) {
         return getInstance(clazz.getName());
@@ -136,7 +136,7 @@ public class LogSource {
      * Gets a {@code Log} instance by class name.
      *
      * @param name Class name.
-     * @return a {@code Log} instance.
+     * @return A {@code Log} instance.
      */
     static public Log getInstance(final String name) {
         return logs.computeIfAbsent(name, k -> makeNewLogInstance(name));
@@ -146,7 +146,7 @@ public class LogSource {
      * Returns a {@link String} array containing the names of
      * all logs known to me.
      *
-     * @return a {@link String} array containing the names of
+     * @return A {@link String} array containing the names of
      * all logs known to me.
      */
     static public String[] getLogNames() {
@@ -178,7 +178,7 @@ public class LogSource {
      * are on a JDK 1.4 or later system, or NoOpLog if neither of the above conditions is true.
      *
      * @param name the log name (or category)
-     * @return a new instance.
+     * @return A new instance.
      */
     static public Log makeNewLogInstance(final String name) {
         Log log;

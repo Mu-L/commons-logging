@@ -566,7 +566,7 @@ public abstract class LogFactory {
      * </p>
      *
      * @param clazz Class.
-     * @return a ClassLoader.
+     * @return A ClassLoader.
      * @since 1.1
      */
     protected static ClassLoader getClassLoader(final Class<?> clazz) {
@@ -719,7 +719,7 @@ public abstract class LogFactory {
      * <em>NOTE</em> - In a multi-threaded environment it is possible that two different instances will be returned for the same class loader environment.
      * </p>
      *
-     * @return a {@code LogFactory}.
+     * @return A {@code LogFactory}.
      * @throws LogConfigurationException if the implementation class is not available or cannot be instantiated.
      */
     public static LogFactory getFactory() throws LogConfigurationException {
@@ -914,7 +914,7 @@ public abstract class LogFactory {
      * Gets a named logger, without the application having to care about factories.
      *
      * @param clazz Class from which a log name will be derived
-     * @return a named logger.
+     * @return A named logger.
      * @throws LogConfigurationException if a suitable {@code Log} instance cannot be returned
      */
     public static Log getLog(final Class<?> clazz) throws LogConfigurationException {
@@ -926,7 +926,7 @@ public abstract class LogFactory {
      *
      * @param name Logical name of the {@code Log} instance to be returned (the meaning of this name is only known to the underlying logging implementation that
      *             is being wrapped)
-     * @return a named logger.
+     * @return A named logger.
      * @throws LogConfigurationException if a suitable {@code Log} instance cannot be returned
      */
     public static Log getLog(final String name) throws LogConfigurationException {
@@ -1345,7 +1345,7 @@ public abstract class LogFactory {
      *
      * @param factoryClass factory class.
      * @param classLoader class loader.
-     * @return a LogFactory.
+     * @return A LogFactory.
      */
     protected static LogFactory newFactory(final String factoryClass,
                                            final ClassLoader classLoader) {
@@ -1382,7 +1382,7 @@ public abstract class LogFactory {
      * @param factoryClass       Fully qualified name of the {@code LogFactory} implementation class
      * @param classLoader        ClassLoader from which to load this class
      * @param contextClassLoader is the context that this new factory will manage logging for.
-     * @return a new instance of the specified {@code LogFactory}.
+     * @return A new instance of the specified {@code LogFactory}.
      * @throws LogConfigurationException if a suitable instance cannot be created
      * @since 1.1
      */
@@ -1453,7 +1453,7 @@ public abstract class LogFactory {
      * </p>
      *
      * @param obj may be null.
-     * @return a string of form {@code className@hashCode}, or "null" if obj is null.
+     * @return A string of form {@code className@hashCode}, or "null" if obj is null.
      * @since 1.1
      */
     public static String objectId(final Object obj) {
@@ -1536,7 +1536,7 @@ public abstract class LogFactory {
     /**
      * Gets an array containing the names of all currently defined configuration attributes. If there are no such attributes, a zero length array is returned.
      *
-     * @return an array containing the names of all currently defined configuration attributes
+     * @return An array containing the names of all currently defined configuration attributes
      */
     public abstract String[] getAttributeNames();
 
@@ -1544,7 +1544,7 @@ public abstract class LogFactory {
      * Gets a Log for the given class.
      *
      * @param clazz Class for which a suitable Log name will be derived
-     * @return a name from the specified class.
+     * @return A name from the specified class.
      * @throws LogConfigurationException if a suitable {@code Log} instance cannot be returned
      */
     public abstract Log getInstance(Class<?> clazz) throws LogConfigurationException;
@@ -1558,7 +1558,7 @@ public abstract class LogFactory {
      *
      * @param name Logical name of the {@code Log} instance to be returned (the meaning of this name is only known to the underlying logging implementation that
      *             is being wrapped)
-     * @return a {@code Log} instance.
+     * @return A {@code Log} instance.
      * @throws LogConfigurationException if a suitable {@code Log} instance cannot be returned
      */
     public abstract Log getInstance(String name)
