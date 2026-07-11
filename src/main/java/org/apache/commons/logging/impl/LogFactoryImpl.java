@@ -177,7 +177,7 @@ public class LogFactoryImpl extends LogFactory {
      * Gets the context ClassLoader.
      * This method is a workaround for a Java 1.2 compiler bug.
      *
-     * @return the context ClassLoader
+     * @return The context ClassLoader
      * @since 1.1
      */
     protected static ClassLoader getContextClassLoader() throws LogConfigurationException {
@@ -193,7 +193,7 @@ public class LogFactoryImpl extends LogFactory {
      * the entire call stack must have the privilege before the call is
      * allowed.
      *
-     * @return the context class loader associated with the current thread,
+     * @return The context class loader associated with the current thread,
      * or null if security doesn't allow it.
      *
      * @throws LogConfigurationException if there was some weird error while
@@ -705,7 +705,7 @@ public class LogFactoryImpl extends LogFactory {
      * file.
      * </p>
      *
-     * @return the value associated with the property, or null.
+     * @return The value associated with the property, or null.
      */
     private String getConfigurationValue(final String property) {
         if (isDiagnosticsEnabled()) {
@@ -785,7 +785,7 @@ public class LogFactoryImpl extends LogFactory {
     /**
      * Gets the fully qualified Java class name of the {@link Log} implementation we will be using.
      *
-     * @return the fully qualified Java class name of the {@link Log} implementation we will be using.
+     * @return The fully qualified Java class name of the {@link Log} implementation we will be using.
      * @deprecated Never invoked by this class; subclasses should not assume it will be.
      */
     @Deprecated
@@ -803,7 +803,7 @@ public class LogFactoryImpl extends LogFactory {
      * {@code Constructor} instance will ultimately be derived in all circumstances.
      * </p>
      *
-     * @return the {@code Constructor} that can be called to instantiate new {@link org.apache.commons.logging.Log} instances.
+     * @return The {@code Constructor} that can be called to instantiate new {@link org.apache.commons.logging.Log} instances.
      * @throws LogConfigurationException if a suitable constructor cannot be returned
      * @deprecated Never invoked by this class; subclasses should not assume it will be.
      */

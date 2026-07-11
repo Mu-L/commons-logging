@@ -490,7 +490,7 @@ public abstract class LogFactory {
      *
      * @throws LogConfigurationException if a suitable class loader
      *  cannot be identified.
-     * @return the thread's context class loader or {@code null} if the Java security
+     * @return The thread's context class loader or {@code null} if the Java security
      *  policy forbids access to the context class loader from one of the classes
      *  in the current call stack.
      * @since 1.1
@@ -522,7 +522,7 @@ public abstract class LogFactory {
      * in JDK1.1, and in embedded systems where jcl-using code is
      * placed in the bootclasspath.
      *
-     * @return the factory associated with the specified class loader if
+     * @return The factory associated with the specified class loader if
      *  one has previously been created, or null if this is the first time
      *  we have seen this particular class loader.
      */
@@ -673,7 +673,7 @@ public abstract class LogFactory {
      * support for that.
      * </p>
      *
-     * @return the context class loader associated with the current thread,
+     * @return The context class loader associated with the current thread,
      *  or null if security doesn't allow it.
      * @throws LogConfigurationException if there was some weird error while
      *  attempting to get the context class loader.
@@ -691,7 +691,7 @@ public abstract class LogFactory {
      * the entire call stack must have the privilege before the call is
      * allowed.
      *
-     * @return the context class loader associated with the current thread,
+     * @return The context class loader associated with the current thread,
      *  or null if security doesn't allow it.
      * @throws LogConfigurationException if there was some weird error while
      *  attempting to get the context class loader.
@@ -1529,7 +1529,7 @@ public abstract class LogFactory {
      * or {@code null} if there is no such attribute.
      *
      * @param name Name of the attribute to return
-     * @return the configuration attribute with the specified name.
+     * @return The configuration attribute with the specified name.
      */
     public abstract Object getAttribute(String name);
 

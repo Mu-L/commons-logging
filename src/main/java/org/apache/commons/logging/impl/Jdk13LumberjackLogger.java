@@ -186,7 +186,7 @@ public class Jdk13LumberjackLogger implements Log, Serializable {
     /**
      * Gets the native Logger instance we are using.
      *
-     * @return the native Logger instance we are using.
+     * @return The native Logger instance we are using.
      */
     public Logger getLogger() {
         if (logger == null) {

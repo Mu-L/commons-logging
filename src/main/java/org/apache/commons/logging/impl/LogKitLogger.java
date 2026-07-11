@@ -142,7 +142,7 @@ public class LogKitLogger implements Log, Serializable {
     /**
      * Gets the underlying Logger we are using.
      *
-     * @return the underlying Logger we are using.
+     * @return The underlying Logger we are using.
      */
     public Logger getLogger() {
         Logger result = logger;
